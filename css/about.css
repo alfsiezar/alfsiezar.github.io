@@ -1,0 +1,120 @@
+
+#AboutDiv {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    background-color: var(--accentColor);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#AboutContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 20px auto;
+}
+
+#MyPhoto {
+    width: 40%;
+    filter: grayscale(100%);
+    display: block;
+    margin: 0 auto;
+    align-self: flex-start;
+}
+
+#SkillsDiv {
+    position: relative;
+    width: 100%; /* Ensure this div takes up the full width */
+}
+
+.AboutText {
+    text-align: center;
+    font-size: 30px;
+    padding: 0 10%;
+}
+
+.Skills {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 0 10%;
+}
+
+.skillRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    position: relative; /* Position relative to align the bars */
+}
+
+.skill {
+    font-size: 20px;
+    text-align: left;
+    padding: 0 10%;
+    flex-shrink: 0; /* Prevent the text from shrinking */
+    width: 150px; /* Fixed width for all skill text */
+    text-align: left;
+}
+
+.skillBar {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    height: 10px;
+    width: 30%; /* Full width of the container */
+    position: absolute;
+    left: 250px; /* Adjust the starting point of the bar relative to the text */
+}
+
+.fill {
+    background-color: var(--backgroundColor); /* Color for the filled part */
+    height: 100%;
+    border-radius: 10px;
+    transition: width 2s ease-in-out;
+    width: 0;
+}
+
+#AboutSection {
+    text-align: left;
+    font-size: 50px;
+    font-weight: lighter;
+    width: 100%;
+    padding-left: 30%; /* Adjust this value to control how much to the left */
+    padding-top: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    #AboutContainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    #AboutSection {
+        text-align: center;
+        padding-left: 0%;
+    }
+
+    #MyPhoto {
+        width: 50%;
+    }
+
+    .AboutText {
+        font-size: 22px;
+    }
+
+    .Skills {
+        text-align: center;
+        padding: 0;
+    }
+
+    .skillBar {
+        left: 200px; /* Adjust the starting point of the bar relative to the text */
+    }
+}

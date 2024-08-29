@@ -1,0 +1,158 @@
+:root{
+  --backgroundColor: #201E43;
+  --accentColor: #134B70;
+  --lightColor: #81dbf1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--backgroundColor);
+}
+
+h1 {
+  color: #EEEEEE;
+}
+
+h2 {
+  font-weight: lighter;
+  color: #EEEEEE;
+}
+
+p {
+  color: #EEEEEE;
+  font-size: 30px;
+  padding: 0 10%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+span {
+  color: var(--lightColor);
+}
+
+button {
+  color: white; 
+  padding: 5px 5px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: flex; 
+  font-size: 20px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border: none; 
+  border-radius: 12px; 
+  background-color: #134B70;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  aspect-ratio: 16/9;
+}
+
+.image, .video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.video {
+  opacity: 0;
+}
+
+.video-container:hover .image {
+  opacity: 0;
+}
+
+.video-container:hover .video {
+  opacity: 1;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.Section {
+  text-align: left;
+  font-size: 90px;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+#ProjectsDiv{
+  display: flexbox;
+  width: auto;
+  padding: 10px;
+  padding-top: 90px;
+  align-items: center;
+}
+
+
+
+.ProjectTitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 90px;
+}
+
+.ProjectTitle:hover{
+  color: #134B70;
+}
+
+.GameDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.GameText {
+  text-align: center;
+  font-size: 30px;
+  padding: 0 10%;
+}
+/*---------------------------------------------------------------------------------------*/
+
+#ContactDiv {
+  display: flexbox;
+  width: auto;
+  padding: 10px;
+  padding-top: 90px;
+  align-items: center;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+  .Section {
+    text-align: center;
+    padding-left: 0px;
+    font-size: 90px;
+  }
+
+  .GameDiv{
+    padding: 0px;
+  }
+
+  #MyPhoto {
+    width: 80%;
+  }
+}

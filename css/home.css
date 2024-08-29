@@ -1,0 +1,146 @@
+
+.Home {
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    display: flex;
+    background-color: var(--backgroundColor);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#TopbarDiv {
+    position: fixed;       
+    top: 0;               
+    left: 0;              
+    width: 100%;          
+    background-color: var(--backgroundColor); 
+    padding: 10px 20px 0px 10px;   
+    z-index: 1000;       
+    display: flex;         
+    align-items: center;   
+    box-shadow: none; /* No shadow by default */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+}
+#TopbarDiv.shadow {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5); /* Add shadow when scrolled */
+}
+  
+#logo {
+    width: 80px;
+    height: auto;
+    display: flex;
+    padding-left: 150px;
+    padding-bottom: 10px;
+  }
+
+.TopbarButton {
+    font-size: 30px;
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 10px;
+}
+
+.TopbarButton:hover{
+    color: var(--lightColor);
+}
+  
+#textMenuDiv {
+    display: inline-flex;
+    gap: 10px;
+    flex-grow: 1;
+  }
+  
+#RightMenuDiv {
+    display: flex;
+    gap: 5px;
+    padding-right: 15px;
+  }
+  
+#BurgerMenu {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  opacity: 0%;
+  filter: brightness(0) invert(1); 
+}
+  
+.sideMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #134B70;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 150px;
+    z-index: 999;
+  }
+  
+.sideMenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+.sideMenu a:hover {
+    color: #f1f1f1;
+  }
+  
+.Introduction {
+    font-size: 70px;
+    margin: 0;
+}
+
+.Description {
+    font-size: 30px;
+    margin: 20px 0 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #logo{
+        width: 50px;
+        padding-left: 20px;
+    }
+    .TopbarButton {
+        opacity: 0%;
+        pointer-events: none;
+    }
+    #BurgerMenu {
+        opacity: 100%;
+        padding-left: 120px;
+    }
+    .Introduction {
+        font-size: 50px;
+    }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes erase {
+    from { width: 100%; }
+    to { width: 0; }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+  }
+  
+  .typing {
+    display: inline-block;
+    white-space: nowrap; /* Ensure text stays on one line */
+    overflow: hidden; /* Hide overflowing text */
+    border-right: 2px solid white; /* Cursor effect */
+    animation: typing 2s steps(30, end) 0s 1 normal both, 
+               blink 0.75s step-end infinite, 
+               erase 2s steps(30, end) 2s 1 normal both;
+}
