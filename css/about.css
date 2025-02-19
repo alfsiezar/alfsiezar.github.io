@@ -83,7 +83,7 @@
     font-size: 50px;
     font-weight: lighter;
     width: 100%;
-    padding-left: 30%; /* Adjust this value to control how much to the left */
+    padding-left: 30%;
     padding-top: 5%;
 }
 
@@ -115,6 +115,6 @@
     }
 
     .skillBar {
-        left: 200px; /* Adjust the starting point of the bar relative to the text */
+        left: 200px;
     }
 }
