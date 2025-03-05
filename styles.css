@@ -165,9 +165,9 @@ section#about div {
 }
 
 section#about h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--third-color);
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 section#about p {
@@ -179,17 +179,33 @@ section#about p {
 }
 
 section#projects h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--third-color);
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 section#projects p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: var(--third-color);
     margin: 1rem 0;
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
+}
+
+.contactButton {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px; 
+    margin: 5px; 
+}
+
+.contactButton img {
+    vertical-align: middle; 
+    width: 100%; 
+    height: 100%;
+    float: right;
 }
 
 /*--------------------------- Section Styles End ------------------------------*/
@@ -263,6 +279,12 @@ section#projects p {
     margin: 3rem;
 }
 
+.project-image {
+    width: 50%;
+    height: auto;
+    margin: 1rem 0;
+}
+
 .highlight {
     font-size: 2.5rem;
     color: var(--primary-color);
@@ -285,6 +307,15 @@ section#projects p {
     font-weight: bold;
     color: var(--primary-color);
     animation: blink 1s infinite;
+}
+
+.white-icon {
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.white-icon:hover {
+    transform: scale(1.2);
 }
 
 /*--------------------------- Extra Styles End ------------------------------*/
