@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Minimalist OnePage Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="side-menu">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#footer">Contact</a>
+        </div>
+    </header>
+    <main>
+
+        <section id="home">
+            <h1>Hi, my name is <span class="highlight">Alfredo Siezar</span></h1>
+            <p>and I'm <span class="typewriter"></span><span class="cursor">|</span></p>
+            <div class="animation"></div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div>  
+                <img src="photos/MyPicture.jpg" alt="My Picture" class="profile-picture">
+                <p>
+                    I was born in Nicaragua, I earned my degree in Video Game Design and Programming and my masters in Artificial Inteligence
+                    from <span class="highlight_p">UDIT </span>(University of Design and Technology) in Madrid, Spain.
+                    I have experience with various programming languages such as: 
+                    <span class="highlight_p">C#, C++, JavaScript, Python & R</span>.
+                    I also have experience with programs such as 
+                    <span class="highlight_p">VSCode, Unity, Unreal Engine, 3Ds Max, Photoshop, Illustrator, etc...</span>
+                </p>
+            </div>
+            <div class="skills-container">
+                <h2 class="Skills">Skills</h2>
+                <div class="skills-columns">
+                    <div class="skill-column">
+                        <div class="skill">
+                            <p>C# </p>
+                            <div class="bar">
+                                <div class="fill" data-percentage="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>C++ </p>
+                            <div class="bar">
+                                <div class="fill" data-percentage="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Python </p>
+                            <div class="bar">
+                                <div class="fill" data-percentage="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>JavaScript </p>
+                            <div class="bar">
+                                <div class="fill" data-percentage="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>R</p>
+                            <div class="bar">
+                                <div class="fill" data-percentage="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-column">
+                        <div class="skill">
+                            <p>Unreal Engine </p>
+                            <div class="bar">
+                                <div class="fill" data-percentage="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Unity </p>
+                            <div class="bar">
+                                <div class="fill" data-percentage="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>Html </p>
+                            <div class="bar">
+                                <div class="fill" data-percentage="100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>CSS </p>
+                            <div class="bar">
+                                <div class="fill" data-percentage="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <p>3Ds Max </p>
+                            <div class="bar">
+                                <div class="fill" data-percentage="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h2>Fatal: Unleashed Darkness</h2>
+                <img src="photos/FatalUD.png" alt="Project 1">
+                <p>
+                    Fatal: Unleashed Darkness is a colaborative project which is still under development. I have worked on this project
+                    since the beginning, I've worked on the enemies AI and also on game mechanincs such as collecting key items to use later on.
+                </p>
+        </section>
+
+    </main>
+    <footer id="footer">
+        <p>Contact information and social media links.</p>
+    </footer>
+    <script src="main.js"></script>
+    <script src="ball_anim.js"></script>
+</body>
+</html>
